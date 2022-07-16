@@ -1,11 +1,21 @@
+let $ = document
 
-import { users ,  } from './func.js'
-
-function find (number){
-    return number === users[1]
+const menuBurgerBtn = $.querySelector(".bi-list-nested")
+const NavContainer = $.querySelector(".container-nav")
+let boolian = true
+menuBurgerBtn.onclick = ()=>{
+    if (boolian) {
+        NavContainer.style.top = '0%'
+        boolian = false
+    }else{
+        boolian = true
+    }
 }
 
+const closeNavBtn = $.querySelector('.bi-x-lg')
 
-
-console.log(find(2));
+closeNavBtn.onclick = ()=>{
+    NavContainer.style.top = '-100%'
+    boolian = true
+}
 
