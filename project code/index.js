@@ -19,3 +19,4 @@ closeNavBtn.onclick = ()=>{
     boolian = true
 }
 
+
