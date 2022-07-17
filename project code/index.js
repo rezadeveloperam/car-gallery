@@ -18,5 +18,3 @@ closeNavBtn.onclick = ()=>{
     NavContainer.style.top = '-100%'
     boolian = true
 }
-
-
